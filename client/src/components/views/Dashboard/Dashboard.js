@@ -18,11 +18,6 @@ function Dashboard() {
         fetchMovies(endpoint)
     }, [])
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-    }, [])
-
-
     const fetchMovies = (endpoint) => {
 
         fetch(endpoint)
